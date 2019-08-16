@@ -1,9 +1,22 @@
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
-// let myFunction = function () {
-// console.log("Function was invoked!");
-// };
-// myFunction();
+// let myFunction = () => console.log("Function was invoked!")
+
+let myFunction = () => {
+console.log("Function was invoked!");
+};
+myFunction();
+
+myFunction = () => {
+    console.log("Function was invoked")
+}
+myFunction()
+
+myFunction = (name, extra) => {
+    console.log(`function was invoked shorthanded with an implicit return, Hello ${name}`) 
+    console.log(`${extra}`)
+}
+myFunction("Jay", "Testing")
 
 // let anotherFunction = function (param) {
 //   return param;
